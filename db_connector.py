@@ -10,7 +10,7 @@ cursor = conn.cursor()
 
 def add_user(id,name):
     full_id=int(id)
-    #creation_time= datetime.now()
+    
     creation_time= str(datetime.now())
     #Inserting data into users table
     try:
@@ -19,9 +19,7 @@ def add_user(id,name):
 
     except:
         return False
-    # finally:
-    #     cursor.close()
-    #     conn.close()
+    
 
 def get_user(id):
     full_id=int(id)
@@ -34,9 +32,7 @@ def get_user(id):
     except:
         print("return false")
         return False
-    # finally:
-    #     conn.close()
-    #     cursor.close()
+  
 
 def update_user(id,name):
     full_id=int(id)
@@ -52,9 +48,7 @@ def update_user(id,name):
 
     except:
         return False
-    # finally:
-    #     cursor.close()
-    #     conn.close()
+    
 
 def delete_user(id):
     full_id=int(id)
@@ -70,9 +64,5 @@ def delete_user(id):
 
     except:
         return False
-    # finally:
-    #     cursor.close()
-    #     conn.close()
+  
 
-#update_user(1081,"kuku2")
-#delete_user(50)
