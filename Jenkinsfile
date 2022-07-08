@@ -25,7 +25,7 @@ pipeline {
             steps {
                bat 'python clean_enviroment.py'
             }
-        }/*
+        }*/
     }
 }
 
