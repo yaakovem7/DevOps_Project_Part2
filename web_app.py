@@ -16,12 +16,12 @@ def get_user_name(user_id):
         print("user_name")
         if user_name == None:
             print("<H1 id='error'>no such user: " + user_id + "</H1>")
-            #return "<H1 id='error'>no such user: " + user_id + "</H1>", 200
+            
             return "<H1 id='error'>no such user</H1>", 200
         else:
-            #print("<H1 id='user'>" + user_name + "</H1>")
+           
             return "<H1 id="+user_id+">" + user_name + "</H1>", 200
-            #return "<H1 id=" + user_id + ">Works</H1>", 200
+            
 
 
 @app.route('/stop_server')
