@@ -21,11 +21,11 @@ pipeline {
                 bat 'python frontend_testing.py'
             }
         }
-        #stage('run clean enviroment') {
-        #    steps {
-        #        bat 'python clean_enviroment.py'
-        #    }
-        #}
+        /*stage('run clean enviroment') {
+            steps {
+               bat 'python clean_enviroment.py'
+            }
+        }/*
     }
 }
 
